@@ -1,1 +1,2 @@
-# news content for itellio
+# news
+news content styled for itellio

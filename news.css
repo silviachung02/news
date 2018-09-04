@@ -4,7 +4,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 ul {
   list-style-type: none;
@@ -15,29 +15,97 @@ h1, p {
   margin: 0;
 }
 .header {
-  background-color: green;
+  background-color: #ffffff;
   height: 130px;
+  letter-spacing: .043em;
 }
 .header ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  line-height: 2;
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
 }
 #header {
   font-weight: 900;
   font-size: 60px;
 }
 #date {
+  color: #8AD6E2;
   font-weight: 500;
-  font-size: 60px;
+  font-size: 50px;
 }
-.content-container {
+.content {
   height: 1790px;
   background-color: #B6F0FF;
+  /* background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+              linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+              linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
+              background: linear-gradient(180deg, #c6ffdd, #fbd786, #f7797d);
+              /* background: linear-gradient(0deg, #ada996, #f2f2f2, #dbdbdb, #eaeaea); */
+              /* background: linear-gradient(180deg, #ffafbd, #ffc3a0); */
+              /* background: linear-gradient(180deg, #d9a7c7, #fffcdc); */
 }
-#headline {
-
+h1 {
+  font-size: 75px;
+  letter-spacing: .043em;
 }
-#content {
-  
+p {
+  font-size: 60px;
+  letter-spacing: .0125em;
+  width: 94%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image-container {
+  width: 1080px;
+  height: 750px;
+}
+img {
+  width: inherit;
+  height: inherit;
+}
+p::first-line {
+  font-weight: 900;
+  font-size: 120px;
+  font-style: italic;
+}
+@media only screen and (min-width: 1280px) {
+  .content {
+    height: 894px;
+    padding: 0 38.4px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .image-container {
+    width: 417.425px;
+    height: 556.566px;
+    object-fit: cover;
+    background-color: black;
+  }
+  p {
+    margin: 0;
+    width: 749px;
+    /* margin-right: 50px; */
+    font-size: 48px;
+  }
+  p::first-line {
+    font-size: 100px;
+    font-weight: 500;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .content {
+    height: 950px;
+    padding: 0 100px;
+  }
+  p {
+    font-size: 50px;
+    width: 1154px;
+  }
 }
