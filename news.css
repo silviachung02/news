@@ -4,7 +4,6 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  /* overflow: hidden; */
 }
 ul {
   list-style-type: none;
@@ -29,24 +28,18 @@ h1, p {
   margin-right: auto;
 }
 #header {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 60px;
 }
 #date {
-  color: #8AD6E2;
-  font-weight: 500;
+  color: #bf0233;
+  font-weight: 700;
   font-size: 50px;
 }
 .content {
   height: 1790px;
   background-color: #B6F0FF;
-  /* background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-              linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-              linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
-              background: linear-gradient(180deg, #c6ffdd, #fbd786, #f7797d);
-              /* background: linear-gradient(0deg, #ada996, #f2f2f2, #dbdbdb, #eaeaea); */
-              /* background: linear-gradient(180deg, #ffafbd, #ffc3a0); */
-              /* background: linear-gradient(180deg, #d9a7c7, #fffcdc); */
+  background: linear-gradient(180deg, #c6ffdd, #fbd786, #f7797d);
 }
 h1 {
   font-size: 75px;
@@ -59,6 +52,8 @@ p {
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+  max-height: 940px;
+  overflow: hidden;
 }
 .image-container {
   width: 1080px;
@@ -69,10 +64,12 @@ img {
   height: inherit;
 }
 p::first-line {
+  display: block;
   font-weight: 900;
   font-size: 120px;
   font-style: italic;
 }
+
 @media only screen and (min-width: 1280px) {
   .content {
     height: 894px;
@@ -91,7 +88,7 @@ p::first-line {
   p {
     margin: 0;
     width: 749px;
-    /* margin-right: 50px; */
+    max-height: 690px;
     font-size: 48px;
   }
   p::first-line {
